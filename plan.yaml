@@ -6,9 +6,6 @@ steps:
   args: 
   - '-c'
   - |
-      echo "TESTEEEE";
-      echo "BASE BRANCH: $_BASE_BRANCH";
-      
       if [ -d "envs/$_BASE_BRANCH/" ]; then
         cd envs/$_BASE_BRANCH
         terraform init

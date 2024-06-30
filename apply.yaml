@@ -42,3 +42,4 @@ steps:
 # [END tf-apply]     
 options:
   logging: CLOUD_LOGGING_ONLY
+serviceAccount: 'projects/$PROJECT_ID/sa-pipeline@$PROJECT_ID.iam.gserviceaccount.com'

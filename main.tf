@@ -8,3 +8,4 @@ module "obd-docker-repository" {
   source = "./modules/artifact_registry"
   gcp_region = "us-central1"
 }
+

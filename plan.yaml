@@ -49,3 +49,5 @@ steps:
         done
       fi 
 # [END tf-plan]
+options:
+  logging: CLOUD_LOGGING_ONLY

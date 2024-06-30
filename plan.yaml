@@ -6,8 +6,8 @@ steps:
   args: 
   - '-c'
   - |
-      if [ -d "envs/$BRANCH_NAME/" ]; then
-        cd envs/$BRANCH_NAME
+      if [ -d "envs/$_BASE_BRANCH/" ]; then
+        cd envs/$_BASE_BRANCH
         terraform init
       else
         for dir in envs/*/
@@ -31,8 +31,8 @@ steps:
   args: 
   - '-c'
   - | 
-      if [ -d "envs/$BRANCH_NAME/" ]; then
-        cd envs/$BRANCH_NAME
+      if [ -d "envs/$_BASE_BRANCH/" ]; then
+        cd envs/$_BASE_BRANCH
         terraform plan
       else
         for dir in envs/*/
